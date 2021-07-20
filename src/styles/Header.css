@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+header div{
+    height: 31vh;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    padding: 10vh 15% 0vh 15%;
+}
+nav{
+    float: left;
+}
+nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background: #202020;
+    height: 56px;
+}
+nav p{
+    color: whitesmoke;
+}
+@media screen and (min-height: 602px){
+    header div{
+        padding: 8vh 12% 0vh 12%;
+        height: 26vh;
+    }
+}
+@media screen and (min-height: 812px){
+    header div{
+        height: 16vh;
+    }
+}
+@media screen and (min-height: 1024px){
+    header div{
+        background-size: 100vw;
+        padding: 8vh 20% 0vh 20%;
+    }
+}
+@media screen and (min-width: 1366px) and (min-height: 768px){
+    header div{
+        padding: 13vh 20% 0vh 20%;
+        height: 31vh;
+        background-position-y: -55vh;
+    }
+}

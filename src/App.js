@@ -1,5 +1,6 @@
 import './App.css';
 import { useEffect, useState } from 'react';
+import Header from './Header.js';
 import { Character } from './Character.js';
 
 
@@ -15,7 +16,8 @@ export default function App() {
   })
 
   return (
-    <div>
+    <>
+      <Header/>
       {characters.map((character) => 
       <Character 
       key={character.id} {...character} // Spread operators
@@ -25,6 +27,6 @@ export default function App() {
       // gender={character.gender} 
       // status={character.status} 
       /> )}
-    </div>
+    </>
   )
 }
