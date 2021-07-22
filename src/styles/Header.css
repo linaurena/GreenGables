@@ -2,18 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 header{
     display: flex;
     flex-direction: column;
 }
-header div{
+.cover{
     height: 31vh;
     background-image: url(../img/background.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;
-    padding: 10vh 15% 0vh 15%;
+}
+.cover img{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    height: 80%;
 }
 nav{
     float: left;
@@ -22,33 +29,66 @@ nav{
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
-    background: #202020;
+    background: #4d6e5b; /*#6E664D #4d6e68*/
     height: 56px;
 }
 nav p{
     color: whitesmoke;
 }
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 1rem;
+    height: 100%;
+}
+.nav-icons{
+    height: 25px;
+    margin-top: 15.5px;
+}
+.link-nav{
+    list-style: none;
+    margin-left: 15px;
+}
+.link-nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    cursor: pointer;
+}
 @media screen and (min-height: 602px){
-    header div{
-        padding: 8vh 12% 0vh 12%;
+    .cover{
         height: 26vh;
     }
 }
 @media screen and (min-height: 812px){
-    header div{
-        height: 16vh;
+    .cover{
+        height: 25vh;
+    }
+    .cover img{
+        margin-top: 5%;
     }
 }
 @media screen and (min-height: 1024px){
-    header div{
+    .cover{
         background-size: 100vw;
-        padding: 8vh 20% 0vh 20%;
+        height: 28vh;
+    }
+    .cover img{
+        margin-top: 4%;
     }
 }
+/* Galaxy Fold */
+@media screen and (min-width: 280px) and (min-height: 653px){
+    .cover{
+        height: 24vh;
+    }
+}
+
 @media screen and (min-width: 1366px) and (min-height: 768px){
-    header div{
-        padding: 13vh 20% 0vh 20%;
+    .cover{
         height: 31vh;
-        background-position-y: -55vh;
+    }
+    .cover img{
+        margin-top: 2%;
     }
 }
