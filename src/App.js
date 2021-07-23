@@ -18,7 +18,8 @@ export default function App() {
   return (
     <>
       <Header/>
-      {characters.map((character) => 
+      <main>
+      {characters.map((character) =>
       <Character 
       key={character.id} {...character} // Spread operators
       // =
@@ -27,6 +28,7 @@ export default function App() {
       // gender={character.gender} 
       // status={character.status} 
       /> )}
+      </main>
     </>
   )
 }

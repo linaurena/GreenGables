@@ -3,4 +3,11 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Quicksand', 'Rancho', sans-serif;
+  background-color: #F8F7F7;
+}
+main{
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 3rem ;
+  justify-content: space-evenly;
 }
