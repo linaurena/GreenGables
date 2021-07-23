@@ -2,6 +2,7 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import Header from './Header.js';
 import { Character } from './Character.js';
+import { Footer } from './Footer';
 
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
       // status={character.status} 
       /> )}
       </main>
+      <Footer />
     </>
   )
 }
